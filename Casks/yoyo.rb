@@ -1,14 +1,13 @@
-class Yoyo < Formula
+cask "yoyo" do
+
+  version "0.0.1"
+  name "yoyo"
+
   desc "🦄 开箱即用的一款支持扩展播放源的播放器"
   homepage "https://github.com/waifu-project/movie"
   url "https://github.com/waifu-project/movie/releases/latest/download/yoyo.mac.zip"
+  sha256 :no_check
 
-  def install
-    system "unzip", "-q", "yoyo.mac.zip"
-    system "cp", "-Rf", "yoyo.app", "/Applications/"
-  end
+  app "yoyo.app"
 
-  def uninstall
-    system "rm", "-rf", "/Applications/yoyo.app"
-  end
 end
