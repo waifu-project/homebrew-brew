@@ -8,6 +8,6 @@ cask "yoyo" do
   url "https://github.com/waifu-project/movie/releases/latest/download/catmovie-mac.zip"
   sha256 :no_check
 
-  app "yoyo.app"
+  app "小猫影视.app"
 
 end
